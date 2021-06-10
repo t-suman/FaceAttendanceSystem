@@ -1,0 +1,15 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Preferred package manager is npm
+yarn.lock
+package-lock.json
+*/package-lock.json
+*/yarn.lock
+
+# dependencies
+/node_modules
+*/node_modules
+*/**/node_modules
+*/**/.serverless
+
+
