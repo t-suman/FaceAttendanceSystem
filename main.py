@@ -4,10 +4,16 @@ import face_recognition
 import os
 from utils.recordAttendance import give_attendance
 from utils.constants import IMAGE_PATH
+from Assets.DB.schedules.schedules import getSchedule
 
+
+branch = 'CSE'
+batch_id = '2017-2021'
 images = []
 personNames = []
 myList = os.listdir(IMAGE_PATH)
+
+schedules = getSchedule(branch, batch_id)
 
 print(myList)
 
