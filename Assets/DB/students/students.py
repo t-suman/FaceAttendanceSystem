@@ -1,41 +1,41 @@
-import uuid
-
 class Student:
     def __init__(self, id, name, branch, semester, batch_id, roll, image_url):
-        self.id = self.id
+        self.id = id
         self.name = name
         self.branch = branch
         self.semester = semester
-        self.batch_id = batch_id,
-        self.roll = roll,
+        self.batch_id = batch_id
+        self.roll = roll
         self.image_url = image_url
+        self.role = 'student'
 
-studets = [
+students = [
     Student(
-        uuid.uuid1().hex,
-        'Suman',
+        'suman20171033',
+        'Suman Thakur',
         'CSE',
         'Sem8',
         '2017-2021',
         '20171033',
-        '/home/suman/CollegeProject/FaceAttendanceSystem/Assets/images/suman.jpeg'
+        'suman.jpeg'
     ),
     Student(
-        uuid.uuid1().hex,
-        'Vikash',
+        'vikash20171033',
+        'Vikash Pandey',
         'CSE',
         'Sem8',
         '2017-2021',
         '20171053',
-        '/home/suman/CollegeProject/FaceAttendanceSystem/Assets/images/vikash.jpeg'
+        'vikash.jpeg'
     ),
     Student(
-        uuid.uuid1().hex,
-        'Kishan',
+        'kishan20171033',
+        'Kishan Thakur',
         'CSE',
         'Sem8',
         '2017-2021',
         '20171026',
-        '/home/suman/CollegeProject/FaceAttendanceSystem/Assets/images/kishan.jpeg'
+        'kishan.jpeg'
     )
 ]
+

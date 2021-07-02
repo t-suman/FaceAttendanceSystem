@@ -7,15 +7,23 @@ class Teacher:
         self.id = id
         self.name = name
         self.image_url = image_url
+        self.role = 'teacher'
 
 teachers = [
     Teacher(
-        '1',
+        'sg123',
         'Soumik Ghosh Sir',
-        '/home/suman/CollegeProject/FaceAttendanceSystem/Assets/images/SoumikGhosh.jpeg'
+        'sg_sir.jpeg'
     ),
     Teacher(
-        '2',
-        '/home/suman/CollegeProject/FaceAttendanceSystem/Assets/images/SKGsir.png'
+        'skg123',
+        'SKG sir',
+        'skg_sir.png'
     )
 ]
+
+def getTeacherById(teacher_id):
+    for teacher in teachers:
+        if teacher.id == teacher_id:
+            return teacher
+    return None
